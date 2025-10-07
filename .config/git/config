@@ -1,0 +1,7 @@
+[user]
+	name = hiroki706
+	email = hiroki.okubo.tokyo@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim

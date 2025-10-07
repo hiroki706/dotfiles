@@ -1,0 +1,20 @@
+/*
+
+# nixディレクトリ
+!nix/
+!nix/**/*
+
+# dotfiles
+!.config/
+!.config/**/*
+.config/nushell/history.txt
+!.bashrc
+
+# github ssh
+!.ssh/
+.ssh/id_*
+.ssh/known_hosts*
+!.ssh/config
+
+!.gitignore
+!README.md

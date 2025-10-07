@@ -1,0 +1,12 @@
+__pycache__/
+*.py[oc]
+*.sqlite3
+venv/
+.venv/
+memory-bank/
+.clinerules
+planing/
+.planning/
+.env/
+dist/
+*.local.*

@@ -1,0 +1,34 @@
+[tools]
+eza = "latest"
+fd = "latest"
+lazygit = "latest"
+# nvimにluaが内蔵されているので不要かも
+# lua = "5.1"
+neovim = "latest"
+bun = "latest"
+# なぜかパスが通ってくれないが代わりに bunx @google/gemini-cli で実行できる
+# "npm:@google/gemini-cli" = "latest"
+# "npm:@openai/codex" = "latest"
+pnpm = "latest"
+python = "latest"
+ripgrep = "latest"
+ruff = "latest"
+starship = "latest"
+usage = "latest"
+uv = "latest"
+
+[env]
+EDITOR = "nvim"
+
+[settings]
+idiomatic_version_file_enable_tools = ["python"]
+experimental = true
+
+[settings.python]
+compile = false
+
+[settings.node] # FIXME: nodejsがインストール時に謎のc言語ビルドがエラーを起こし失敗する(未解決)
+compile = false
+
+[settings.npm] # NixOS環境でnodeがインストールできないので代わりにbunを使う
+bun = true
