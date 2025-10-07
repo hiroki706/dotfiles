@@ -8,6 +8,7 @@
 !.config/
 !.config/**/*
 .config/nushell/history.txt
+.config/systemd/*
 !.bashrc
 
 # github ssh

@@ -9,9 +9,8 @@
     extraGroups = [ "wheel" "docker" ];
   };
 
-  virtualisation.docker.rootless = {
+  virtualisation.docker = {
     enable = true;
-    setSocketVariable = true;
   };
 
   environment.systemPackages = with pkgs; [
