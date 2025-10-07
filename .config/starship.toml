@@ -56,16 +56,16 @@ disabled = false
 style = "bg:color_orange fg:color_fg0"
 
 [os.symbols]
-Windows = "[󰍲 ](bg:color_orange fg:blue)"
-Ubuntu = "󰕈 "
-NixOS = " "
+Windows = "[󰍲](bg:color_orange fg:blue)"
+Ubuntu = "󰕈"
+NixOS = ""
 
 [username]
 disabled = false
 show_always = true
 style_user = "bg:color_orange fg:color_fg0"
 style_root = "bg:color_orange fg:color_red"
-format = '[ ]($style)'
+format = '[$user]($style)'
 
 [directory]
 style = "fg:color_fg0 bg:color_blue"
