@@ -22,5 +22,9 @@ mkdir ($nu.data-dir | path join "vendor/autoload")
 # miseのエイリアスが通せないので仕方なくmise x を使用
 mise x starship -- starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
+# ウェルカムメッセージを消す
+$env.config.show_banner = false
+
 # ユーティリティ用エイリアス
 alias lg = lazygit
+
