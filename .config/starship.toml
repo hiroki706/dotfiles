@@ -3,7 +3,6 @@
 format = """
 [](color_orange)\
 $os\
-$username\
 [](bg:color_blue fg:color_orange)\
 $directory\
 [](fg:color_blue bg:color_green)\
@@ -57,34 +56,16 @@ disabled = false
 style = "bg:color_orange fg:color_fg0"
 
 [os.symbols]
-Windows = "[󰍲](bg:color_orange fg:blue)"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-Arch = "󰣇"
-Artix = "󰣇"
-EndeavourOS = ""
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
-Pop = ""
+Windows = "[󰍲 ](bg:color_orange fg:blue)"
+Ubuntu = "󰕈 "
+NixOS = " "
 
 [username]
 disabled = false
 show_always = true
 style_user = "bg:color_orange fg:color_fg0"
 style_root = "bg:color_orange fg:color_red"
-format = '[  ]($style)'
+format = '[ ]($style)'
 
 [directory]
 style = "fg:color_fg0 bg:color_blue"
@@ -97,11 +78,11 @@ truncation_symbol = "…/"
 home_symbol = '~'
 
 [directory.substitutions]
-"Documents" = "󰈙"
+"Documents" = "󰈙 "
 "Downloads" = ""
 "Music" = "󰝚"
 "Pictures" = " "
-"Developer" = "󰲋"
+"Developer" = "󰲋 "
 ".config" = ""
 "INIAD2025" = " "
 "INIAD2026" = " "

@@ -65,11 +65,11 @@ github-cliは複数アカウントのsshkeyに対応していないので従来�
 ## 全設定の圧縮アーカイブ
 1. 7zを使用
     ```bash
-    
+    nix-shell -p p7zip
     ```
 2. 必要なファイルを圧縮
     ```bash
-
+    7z a -mx9 -r dotfiles.7z nix/ .ssh/ .config/ .bashrc .gitignore README.md
     ```
 ## パッケージアップグレードとストレージ開放
 1. flakeをupdateすることで再ビルド
