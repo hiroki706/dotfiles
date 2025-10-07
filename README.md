@@ -21,7 +21,7 @@ Nix, miseを使用してパッケージ管理をしています。
     ```
 4. githubからコードをクローン
     ```bash
-
+    git clone git@github.com.hiroki:hiroki706/dotfiles.git
     ```
 5. パッケージ更新を適用する
     ```bash
@@ -56,9 +56,36 @@ github-cliは複数アカウントのsshkeyに対応していないので従来�
     # bash 
     cat ./id_rsa_iniad.pub | clip.exe
     ```
-
 3. 接続確認
     ```bash
     ssh -T git@github.com.hiroki
     ssh -T git@github.com.iniad
+    ```
+
+## 全設定の圧縮アーカイブ
+1. 7zを使用
+    ```bash
+    
+    ```
+2. 必要なファイルを圧縮
+    ```bash
+
+    ```
+## パッケージアップグレードとストレージ開放
+1. flakeをupdateすることで再ビルド
+    ```bash
+    cd ~/nix
+    nix flake update
+    sudo nixos-rebuild switch --flake ~/nix#wsl
+    ```
+2. miseパッケージアップグレード
+    ```bash
+    mise upgrade
+    ```
+3. ガベージコレクション
+    ```bash
+    # 古い世代を削除(1世代前は残る)
+    sudo nix-collect-garbage -d
+    # システムとユーザーキャッシュをクリア
+    sudo nix-store --optimise
     ```

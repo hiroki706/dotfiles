@@ -3,8 +3,9 @@
   wsl.enable = true;
   wsl.defaultUser = "iniad";
 
-  users.users.yourname = {
+  users.users.iniad = {
     isNormalUser = true;
+    shell = pkgs.nushell;
     extraGroups = [ "wheel" "docker" ];
   };
 
