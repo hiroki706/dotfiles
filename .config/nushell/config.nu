@@ -27,4 +27,5 @@ $env.config.show_banner = false
 
 # ユーティリティ用エイリアス
 alias lg = lazygit
+alias mr = mise r
 

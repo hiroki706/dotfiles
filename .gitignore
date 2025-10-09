@@ -6,9 +6,10 @@
 
 # dotfiles
 !.config/
-!.config/**/*
+!.config/nushell
 .config/nushell/history.txt
 .config/systemd/*
+!.config/nvim/lazy-lock.json
 !.bashrc
 
 # github ssh
