@@ -32,3 +32,17 @@ compile = false
 
 [settings.npm] # NixOS環境でnodeがインストールできないので代わりにbunを使う
 bun = true
+
+[tasks.gituseriniad]
+run = [
+    "git config user.name 's1f10230101'",
+    "git config user.email 's1f102301011@iniad.org'"
+    ]
+dir = "{{cwd}}"
+
+[tasks.gituserhiroki]
+run = [
+    "git config user.name 'hiroki706'",
+    "git config user.email 'hiroki.okubo.tokyo@gmail.com'"
+    ]
+dir = "{{cwd}}"
