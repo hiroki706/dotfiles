@@ -5,12 +5,12 @@
 !nix/**/*
 
 # dotfiles
+!/.config/starship.toml
 !.config/nushell
 .config/nushell/history.txt
-.config/systemd/*
-!.config/nvim/lazy-lock.json
-!.config/starship.toml
-!.config/mise/*
+!.config/nvim
+!.config/mise
+!.config/git/
 !.bashrc
 
 # github ssh
