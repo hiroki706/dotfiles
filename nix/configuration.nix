@@ -10,7 +10,12 @@
   };
 
   virtualisation.docker = {
-    enable = true;
+    enable = false;
+    
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
   };
 
   environment.systemPackages = with pkgs; [
@@ -19,6 +24,7 @@
     nushell
     git
     curl
+    nodejs-slim_24
     wget # vscode-serverのために必要
     gnupg # miseのパッケージハッシュ検証にgpgコマンドが必要
     #gnumake # lua@5.1 のインストールにmakeコマンドが必要
