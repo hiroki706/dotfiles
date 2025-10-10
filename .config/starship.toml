@@ -1,12 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$username$os \
-$directory \
+$username$os\
+$directory\
 [$git_branch$git_status$git_state$git_commit](fg:color_orange) \
-$c$python$rust$golang$nodejs$deno$java$haskell \
-$cmd_duration \
-$memory_usage \
+$c$python$rust$golang$nodejs$deno$java$haskell\
+$cmd_duration\
+$memory_usage\
 $line_break$character"""
 
 # 右側のプロンプト
@@ -32,7 +32,7 @@ color_yellow = '#d79921'
 
 [os]
 disabled = false
-format = "[@$name]($style)"
+format = "[@$name]($style) "
 
 [os.symbols]
 Windows = "[󰍲](fg:blue)"
@@ -68,22 +68,17 @@ home_symbol = '~'
 
 
 [git_branch]
-symbol = ""
-format = '$symbol $branch'
+symbol = ""
+format = '$symbol$branch'
+truncation_length = 20
 
 [git_commit]
-format = "$tag"
 tag_disabled = false
+commit_hash_length = 4
 
 [git_state]
-format = '$state( $progress_current/$progress_total) '
 
 [git_status]
-ahead = '⇡${count}'
-diverged = '⇕⇡${ahead_count}⇣${behind_count}'
-behind = '⇣${count}'
-staged = '++\($count\)'
-format = '($all_status$ahead_behind)'
 
 [nodejs]
 symbol = ""
@@ -131,7 +126,7 @@ format = '$symbol $version'
 [time]
 disabled = true
 time_format = "%R"
-format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
+format = '[[ $time](fg:color_fg0 bg:color_bg1)]($style) '
 
 [line_break]
 disabled = false
@@ -141,7 +136,7 @@ disabled = false
 symbol = '󰍛'
 style = "bold dimmed fg:blue"
 threshold = 0
-format = "[$symbol$ram]($style)"
+format = "[$symbol$ram]($style) "
 
 [character]
 disabled = false

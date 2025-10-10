@@ -5,6 +5,9 @@
 !nix/**/*
 
 # dotfiles
+!.config/
+.config/go/
+.config/systemd/
 !/.config/starship.toml
 !.config/nushell
 .config/nushell/history.txt
