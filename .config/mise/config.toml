@@ -5,10 +5,11 @@ lazygit = "latest"
 # nvimにluaが内蔵されているので不要かも
 # lua = "5.1"
 neovim = "latest"
+#node = "latest"
 bun = "latest"
 # なぜかパスが通ってくれないが代わりに bunx @google/gemini-cli で実行できる
-# "npm:@google/gemini-cli" = "latest"
-# "npm:@openai/codex" = "latest"
+"npm:@google/gemini-cli" = "latest"
+"npm:@openai/codex" = "latest"
 pnpm = "latest"
 python = "3.13"
 ripgrep = "latest"
@@ -30,8 +31,8 @@ compile = false
 [settings.node] # FIXME: nodejsがインストール時に謎のc言語ビルドがエラーを起こし失敗する(未解決)
 compile = false
 
-[settings.npm] # NixOS環境でnodeがインストールできないので代わりにbunを使う
-bun = true
+#[settings.npm] # NixOS環境でnodeがインストールできないので代わりにbunを使う
+#bun = true
 
 [tasks.gituseriniad]
 run = [
@@ -46,3 +47,4 @@ run = [
     "git config user.email 'hiroki.okubo.tokyo@gmail.com'"
     ]
 dir = "{{cwd}}"
+
