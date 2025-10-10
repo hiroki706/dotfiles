@@ -82,7 +82,7 @@ commit_hash_length = 4
 
 [nodejs]
 symbol = ""
-format = '$symbol $version '
+format = '$symbol$version '
 version_format = 'v${major}'
 detect_files = ['package.json', '.node-version', '!bunfig.toml', '!bun.lockb']
 
@@ -92,36 +92,32 @@ format = '[$symbol]($style) '
 
 [c]
 symbol = ""
-format = '[$symbol]($style) $version '
+format = '[$symbol]($style)$version '
 version_format = 'v${major}'
 
 [python]
 symbol = ""
-format = '[$symbol]($style) $version [$virtualenv](green) '
+format = '[$symbol]($style)$version[$virtualenv](green) '
 version_format = 'v${major}.${minor}'
 
 [rust]
 symbol = ""
-format = '[$symbol]($style) $version '
+format = '[$symbol]($style)$version '
 version_format = 'v${major}.${minor}'
 
 [golang]
 symbol = ""
-format = '[$symbol]($style) $version '
+format = '[$symbol]($style)$version '
 version_format = 'v${major}.${minor}'
 
 [java]
 symbol = ""
-format = '[$symbol]($style) $version'
+format = '[$symbol]($style)$version'
 version_format = 'v${major}'
-
-[kotlin]
-symbol = ""
-format = '$symbol $version'
 
 [haskell]
 symbol = ""
-format = '$symbol $version'
+format = '[$symbol$version]($style)'
 
 [time]
 disabled = true
