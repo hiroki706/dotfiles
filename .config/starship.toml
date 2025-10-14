@@ -3,7 +3,7 @@
 format = """
 $username$os\
 $directory\
-[$git_branch$git_status$git_state$git_commit](fg:color_orange)\
+[$git_branch$git_status$git_state$git_commit](fg:color_orange) \
 $c$python$rust$golang$nodejs$deno$java$haskell\
 $memory_usage\
 $cmd_duration\
@@ -77,8 +77,10 @@ tag_disabled = false
 commit_hash_length = 4
 
 [git_state]
-
+# デフォルトから末尾のスペースだけ削除
+format = '\([$state( $progress_current/$progress_total)]($style)\)'
 [git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
 
 [nodejs]
 symbol = ""
