@@ -3,7 +3,7 @@
 format = """
 $username$os\
 $directory\
-[$git_branch$git_status$git_state$git_commit](fg:color_orange) \
+[$git_branch$git_status$git_state$git_commit](fg:color_orange)\
 $c$python$rust$golang$nodejs$deno$java$haskell\
 $cmd_duration\
 $memory_usage\
