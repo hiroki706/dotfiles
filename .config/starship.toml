@@ -5,8 +5,8 @@ $username$os\
 $directory\
 [$git_branch$git_status$git_state$git_commit](fg:color_orange)\
 $c$python$rust$golang$nodejs$deno$java$haskell\
-$cmd_duration\
 $memory_usage\
+$cmd_duration\
 $line_break$character"""
 
 # 右側のプロンプト
