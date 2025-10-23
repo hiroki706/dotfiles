@@ -8,6 +8,7 @@
 !.config/
 .config/go/
 .config/systemd/
+.config/configstore
 !/.config/starship.toml
 !.config/nushell
 .config/nushell/history.txt

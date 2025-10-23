@@ -24,10 +24,9 @@
     nushell
     git
     curl
-    nodejs-slim_24
     wget # vscode-serverのために必要
     gnupg # miseのパッケージハッシュ検証にgpgコマンドが必要
-    #gnumake # lua@5.1 のインストールにmakeコマンドが必要
+    gnumake # lua@5.1 のインストールにmakeコマンドが必要
     stdenv.cc # c言語のコンパイル環境
     ];
 
