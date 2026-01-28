@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$username$os\
+$username$os.$shell\
 $directory\
 [$git_branch$git_status$git_state$git_commit](fg:color_orange) \
 $c$python$rust$golang$nodejs$deno$java$haskell\
@@ -32,12 +32,21 @@ color_yellow = '#d79921'
 
 [os]
 disabled = false
-format = "[@$name]($style) "
+format = "[@$name]($style)"
 
 [os.symbols]
 Windows = "[󰍲](fg:blue)"
 Ubuntu = "󰕈"
 NixOS = ""
+
+[shell]
+disabled = false
+bash_indicator = "[bash](#a593e0)"
+fish_indicator = "[bash](#a593e0)"
+zsh_indicator = "[zsh](#fff1b9)"
+powershell_indicator = "[pwsh](#f7aa97)"
+nu_indicator = "[nu](#f7aa97)"
+cmd_indicator = "[cmd](#color_aqua)"
 
 [username]
 disabled = false
