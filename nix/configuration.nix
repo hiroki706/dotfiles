@@ -5,13 +5,14 @@
 
   users.users.iniad = {
     isNormalUser = true;
-    shell = pkgs.nushell;
+    shell = pkgs.fish;
     extraGroups = [ "wheel" "docker" ];
   };
+  programs.fish.enable = true;
 
   virtualisation.docker = {
     enable = false;
-    
+
     rootless = {
       enable = true;
       setSocketVariable = true;
@@ -21,7 +22,7 @@
   environment.systemPackages = with pkgs; [
     docker
     mise
-    nushell
+    fish
     git
     curl
     wget # vscode-serverのために必要
