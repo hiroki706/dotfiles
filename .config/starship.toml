@@ -42,7 +42,7 @@ NixOS = ""
 [shell]
 disabled = false
 bash_indicator = "[bash](#a593e0)"
-fish_indicator = "[bash](#a593e0)"
+fish_indicator = "[fish](#a593e0)"
 zsh_indicator = "[zsh](#fff1b9)"
 powershell_indicator = "[pwsh](#f7aa97)"
 nu_indicator = "[nu](#f7aa97)"
