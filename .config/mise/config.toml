@@ -1,6 +1,7 @@
 [tools]
 eza = "latest"
 fd = "latest"
+fzf = "latest"
 lazygit = "latest"
 # nvimにluaが内蔵されているので不要かも
 # lua = "5.1"
@@ -16,6 +17,8 @@ ruff = "latest"
 starship = "latest"
 usage = "latest"
 uv = "latest"
+yazi = "latest"
+zoxide = "latest"
 
 [env]
 EDITOR = "nvim"
