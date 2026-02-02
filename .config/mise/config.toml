@@ -7,7 +7,6 @@ lazygit = "latest"
 # lua = "5.1"
 neovim = "latest"
 node = "latest"
-# bunx @google/gemini-cli
 "npm:@google/gemini-cli" = "latest"
 # "npm:@openai/codex" = "latest"
 pnpm = "latest"
@@ -32,6 +31,9 @@ compile = false
 
 [settings.node] # miseのバージョンが古かった
 compile = false
+
+[settings.npm]
+package_manager = "pnpm"
 
 [tasks.gituseriniad]
 run = [
