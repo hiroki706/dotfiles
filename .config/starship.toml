@@ -34,11 +34,6 @@ color_yellow = '#d79921'
 disabled = false
 format = "[@$name]($style)"
 
-[os.symbols]
-Windows = "[󰍲](fg:blue)"
-Ubuntu = "󰕈"
-NixOS = ""
-
 [shell]
 disabled = false
 bash_indicator = "[bash](#a593e0)"
