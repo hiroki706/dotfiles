@@ -5,7 +5,7 @@
 ```bash
 # gitインストール
 sudo apt update
-sudo apt install -y git curl
+sudo apt install -y git build-essential
 
 # /.sshディレクトリコピー
 
