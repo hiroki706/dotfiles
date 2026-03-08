@@ -1,6 +1,23 @@
 # dotfiles -PC開発環境構築設定
-このレポジトリは私のlinux PCの開発環境の設定ファイル集です。
-Nix, miseを使用してパッケージ管理をしています。
+
+## Debianでのインストール
+
+```bash
+# gitインストール
+sudo apt update
+sudo apt install -y git curl
+
+# /.sshディレクトリコピー
+
+# レポジトリをカレントディレクトリに展開
+git init
+git add .bashrc .ssh/config
+git remote add origin git@github.com:hiroki706/dotfiles.git
+git pull
+
+# dockerとmiseのインストール
+./nix/setup.sh
+```
 
 ## WSL-NixOSでのインストール
 1. WSL-NixOSのレポジトリからインストール[https://github.com/nix-community/NixOS-WSL](https://github.com/nix-community/NixOS-WSL)
