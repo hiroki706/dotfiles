@@ -17,7 +17,7 @@
 !.config/mise
 !.config/git/
 !.config/fish/
-config/fish/fish_variables
+.config/fish/fish_variables
 !.bashrc
 
 # github ssh
