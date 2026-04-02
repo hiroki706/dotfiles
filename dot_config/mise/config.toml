@@ -1,0 +1,54 @@
+[tools]
+chezmoi = "latest"
+eza = "latest"
+fd = "latest"
+fzf = "latest"
+lazygit = "latest"
+# nvimにluaが内蔵されているので不要かも
+# lua = "5.1"
+neovim = "latest"
+node = "latest"
+"npm:@google/gemini-cli" = "latest"
+opencode = "latest"
+# "npm:@openai/codex" = "latest"
+pnpm = "latest"
+python = "latest"
+ripgrep = "latest"
+ruff = "latest"
+rust = "latest"
+starship = "latest"
+usage = "latest"
+uv = "latest"
+
+[env]
+EDITOR = "nvim"
+
+[settings]
+idiomatic_version_file_enable_tools = ["python"]
+experimental = true
+
+[settings.python]
+compile = false
+
+[settings.node] # miseのバージョンが古かった
+compile = false
+
+[settings.npm]
+package_manager = "pnpm"
+
+[tasks.gituseriniad]
+run = [
+    "git config user.name 's1f10230101'",
+    "git config user.email 's1f102301011@iniad.org'"
+    ]
+dir = "{{cwd}}"
+
+[tasks.gituserhiroki]
+run = [
+    "git config user.name 'hiroki706'",
+    "git config user.email 'hiroki.okubo.tokyo@gmail.com'"
+    ]
+dir = "{{cwd}}"
+
+[shell_alias]
+oc = "opencode"

@@ -1,0 +1,15 @@
+Host github.com.iniad # メインアカウント
+  HostName github.com
+  User git
+  Port 22
+  IdentityFile ~/.ssh/id_rsa_iniad  # メインアカウント用の鍵
+  TCPKeepAlive yes
+  IdentitiesOnly yes
+
+Host github.com.hiroki # サブアカウント
+  HostName github.com
+  User git
+  Port 22
+  IdentityFile ~/.ssh/id_rsa_hiroki706 # サブアカウント用の鍵
+  TCPKeepAlive yes
+  IdentitiesOnly yes

@@ -1,0 +1,14 @@
+# nushell history
+.config/nushell/history.txt
+
+# fish variables
+.config/fish/fish_variables
+
+# unwanted config directories
+.config/go/
+.config/systemd/
+.config/configstore
+
+# ssh keys and known hosts
+.ssh/id_*
+.ssh/known_hosts*

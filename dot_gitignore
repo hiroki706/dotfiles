@@ -1,0 +1,31 @@
+/*
+
+# nixディレクトリ
+!nix/
+
+# dotfiles
+!.config/
+.config/go/
+.config/systemd/
+.config/configstore
+!/.config/starship.toml
+!.config/nushell
+.config/nushell/history.txt
+!.config/nvim
+!.config/mise
+!.config/git/
+!.config/fish/
+.config/fish/fish_variables
+!.bashrc
+
+# github ssh
+!.ssh/
+.ssh/id_*
+.ssh/known_hosts*
+!.ssh/config
+
+!.gitignore
+!.gitconfig
+!README.md
+!LICENSE
+
