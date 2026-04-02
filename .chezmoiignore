@@ -12,3 +12,6 @@
 # ssh keys and known hosts
 .ssh/id_*
 .ssh/known_hosts*
+
+# empty directories
+.config/fish/completions/
