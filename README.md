@@ -1,5 +1,84 @@
 # dotfiles -PC開発環境構築設定
 
+このdotfilesはLinuxとWindowsで共有されています。
+
+## OSごとの設定の違い
+
+### Linux
+- 設定ファイル: `~/.config/` 以下
+- シェル: bash, fish, nushell
+- Neovim: `~/.config/nvim`
+- Nushell: `~/.config/nushell`
+
+### Windows
+- 設定ファイル: `~/AppData/` 以下
+- シェル: PowerShell, Nushell
+- Neovim: `~/AppData/Local/nvim`
+- Nushell: `~/AppData/Roaming/nushell`
+- PowerShell: `~/Documents/PowerShell/`
+
+### OS固有の設定
+- `.chezmoi.windows/` - Windows固有の設定が含まれています
+- `.chezmoi.linuxignore` - Linuxで無視するファイル（Windows用の設定など）
+- `.chezmoi.windowsignore` - Windowsで無視するファイル（Linux用の設定など）
+
+## Windowsでのインストール
+
+### 1. miseのインストール
+
+```powershell
+# PowerShellでインストール
+winget install jdx.mise
+```
+
+### 2. Neovimのインストール
+
+```powershell
+winget install Neovim.Neovim
+```
+
+### 3. その他のツールのインストール
+
+```powershell
+# Git
+winget install Git.Git
+
+# Starship
+winget install starship
+
+# Lazygit
+winget install JesseDuffield.lazygit
+
+# Yazi (optional)
+winget install sxyazi.yazi
+```
+
+### 4. chezmoiのセットアップ
+
+```powershell
+# gitがインストールされていることを確認
+git --version
+
+# GitHubからchezmoi管理ディレクトリをクローン
+git clone git@github.com.hiroki:hiroki706/dotfiles.git $env:USERPROFILE\.local\share\chezmoi
+
+# chezmoiの初期設定と適用
+cd $env:USERPROFILE\.local\share\chezmoi
+git remote set-url origin git@github.com.hiroki:hiroki706/dotfiles.git
+chezmoi init
+chezmoi apply
+
+# miseに管理されたツールをインストールする
+mise install
+```
+
+### 5. PowerShellプロファイルの再読み込み
+
+```powershell
+# プロファイルを再読み込み
+. $PROFILE
+```
+
 ## Debianでのインストール
 
 ### 1. miseのインストール

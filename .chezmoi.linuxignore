@@ -1,0 +1,5 @@
+# PowerShell profile
+Documents/PowerShell/
+
+# Windows-specific paths
+AppData/

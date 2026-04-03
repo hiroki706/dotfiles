@@ -1,0 +1,17 @@
+# Linux shell configs
+.bashrc
+.profile
+.bash_*
+
+# Fish shell
+.config/fish/
+
+# Nix (NixOS)
+nix/
+
+# Systemd
+.config/systemd/
+
+# SSH keys (keep in Linux ignore as well)
+.ssh/id_*
+.ssh/known_hosts*
