@@ -4,21 +4,21 @@ eza = "latest"
 fd = "latest"
 fzf = "latest"
 lazygit = "latest"
-# nvimにluaが内蔵されているので不要かも
-# lua = "5.1"
 neovim = "latest"
 node = "latest"
 "npm:@google/gemini-cli" = "latest"
 opencode = "latest"
-# "npm:@openai/codex" = "latest"
 pnpm = "latest"
 python = "latest"
 ripgrep = "latest"
 ruff = "latest"
 rust = "latest"
 starship = "latest"
+typst = "latest"
 usage = "latest"
 uv = "latest"
+bun = "latest"
+zig = "latest"
 
 [env]
 EDITOR = "nvim"
@@ -26,12 +26,6 @@ EDITOR = "nvim"
 [settings]
 idiomatic_version_file_enable_tools = ["python"]
 experimental = true
-
-[settings.python]
-compile = false
-
-[settings.node] # miseのバージョンが古かった
-compile = false
 
 [settings.npm]
 package_manager = "pnpm"
@@ -50,5 +44,3 @@ run = [
     ]
 dir = "{{cwd}}"
 
-[shell_alias]
-oc = "opencode"
