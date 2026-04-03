@@ -1,7 +1,11 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
+{{ if eq .os "windows" -}}
+$username@Windows.$shell\
+{{ else -}}
 $username@Linux.$shell\
+{{ end -}}
 $directory\
 [$git_branch$git_status$git_state$git_commit](fg:color_orange) \
 $c$python$rust$golang$nodejs$deno$java$haskell\
@@ -29,10 +33,6 @@ color_orange = '#d65d0e'
 color_purple = '#b16286'
 color_red = '#cc241d'
 color_yellow = '#d79921'
-
-[os]
-disabled = false
-format = "[@$name]($style)"
 
 [shell]
 disabled = false
