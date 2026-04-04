@@ -1,11 +1,11 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-{{ if eq .os "windows" -}}
+{{- if eq .os "windows" -}}
 $username@Windows.$shell\
-{{ else -}}
+{{- else -}}
 $username@Linux.$shell\
-{{ end -}}
+{{- end -}}
 $directory\
 [$git_branch$git_status$git_state$git_commit](fg:color_orange) \
 $c$python$rust$golang$nodejs$deno$java$haskell\
