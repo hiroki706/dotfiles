@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-{{- if eq .os "windows" -}}
+{{- if eq .chezmoi.os "windows" -}}
 $username@Windows.$shell\
 {{- else -}}
 $username@Linux.$shell\
