@@ -1,0 +1,50 @@
+[tools]
+fd = "latest"
+fzf = "latest"
+lazygit = "latest"
+neovim = "latest"
+node = "latest"
+opencode = "latest"
+pnpm = "latest"
+python = "latest"
+ripgrep = "latest"
+rust = "latest"
+starship = "latest"
+typst = "latest"
+usage = "latest"
+uv = "latest"
+zig = "latest"
+gh = "latest"
+codex = "latest"
+
+[env]
+EDITOR = "nvim"
+XDG_CONFIG_HOME = "{{ env.HOME }}/.config"
+_.file = "{{ env.HOME }}/.config/.env"
+
+[settings]
+idiomatic_version_file_enable_tools = ["python"]
+experimental = true
+minimum_release_age = "0h"
+
+[settings.npm]
+package_manager = "pnpm"
+
+[tasks.gituseriniad]
+run = [
+    "git config user.name 's1f10230101'",
+    "git config user.email 's1f102301011@iniad.org'"
+]
+dir = "{{cwd}}"
+
+[tasks.gituserhiroki]
+run = [
+    "git config user.name 'hiroki706'",
+    "git config user.email 'hiroki.okubo.tokyo@gmail.com'"
+]
+dir = "{{cwd}}"
+
+[dotfiles]
+"~/.bashrc" = { source = "~/.config/.bashrc", mode = "symlink" }
+"~/.profile" = { source = "~/.config/.profile", mode = "symlink" }
+

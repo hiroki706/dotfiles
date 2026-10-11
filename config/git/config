@@ -1,0 +1,13 @@
+[user]
+	name = hiroki706
+	email = hiroki.okubo.tokyo@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[credential "https://github.com"]
+	helper =
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !gh auth git-credential
