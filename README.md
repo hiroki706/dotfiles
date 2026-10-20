@@ -1,5 +1,5 @@
 # stowシンボリックリンク
-```
+```bash
 sudo apt install git stow
 git clone https://github.com/hiroki706/dotconfig.git ~/Documents/dotfiles
 
@@ -8,16 +8,16 @@ stow --no-folding -t ~/.config config
 stow --no-folding -t ~ home
 ```
 conflict
-```
+```bash
 stow --adopt -t ~/.config config
 ```
 # fish インストール
-```
+```bash
 sudo apt install fish
 chsh -s $(which fish)
 ```
 ### mise インストール
-```
+```bash
 sudo apt update -y && sudo apt install -y curl
 sudo install -dm 755 /etc/apt/keyrings
 curl -fSs https://mise.jdx.dev/gpg-key.pub | sudo tee /etc/apt/keyrings/mise-archive-keyring.asc 1>/dev/null
