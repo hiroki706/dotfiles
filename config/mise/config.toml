@@ -1,3 +1,4 @@
+#:schema https://mise.jdx.dev/schema/mise.json
 [tools]
 fd = "latest"
 fzf = "latest"
@@ -11,11 +12,16 @@ ripgrep = "latest"
 rust = "latest"
 starship = "latest"
 typst = "latest"
-usage = "latest"
 uv = "latest"
 zig = "latest"
 gh = "latest"
 codex = "latest"
+opam = { version = "latest", asset_pattern = 'opam-*-{{ arch(x64="x86_64", arm64="aarch64") }}-{{ os() }}' }
+yazi = "latest"
+clang = "latest"
+lazydocker = "latest"
+btop = "latest"
+claude = "latest"
 
 [env]
 EDITOR = "nvim"
@@ -29,6 +35,9 @@ minimum_release_age = "0h"
 
 [settings.npm]
 package_manager = "pnpm"
+
+[settings.python]
+compile = false
 
 [tasks.gituseriniad]
 run = [
