@@ -1,8 +1,6 @@
-__pycache__/
-*.py[oc]
 *.sqlite3
-venv/
 .venv/
-.env/
 .env
 *.local.*
+_*/
+private/
