@@ -9,7 +9,7 @@ opencode = "latest"
 pnpm = "latest"
 python = "latest"
 ripgrep = "latest"
-rust = "latest"
+rust = { version = "latest", components = ["rust-analyzer", "rust-src"] }
 starship = "latest"
 typst = "latest"
 uv = "latest"
@@ -21,6 +21,7 @@ yazi = "latest"
 clang = "latest"
 lazydocker = "latest"
 claude = "latest"
+"npm:@deepseek-ai/dsh" = "latest"
 
 [env]
 EDITOR = "nvim"
