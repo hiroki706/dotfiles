@@ -11,6 +11,7 @@ set fish_greeting
 abbr -a lg lazygit
 abbr -a oc opencode
 alias mr='mise r'
+alias fd='fdfind'
 
 # opam設定
 test -r '/home/hirok/.opam/opam-init/init.fish' && source '/home/hirok/.opam/opam-init/init.fish' >/dev/null 2>/dev/null; or true

@@ -20,7 +20,6 @@ opam = { version = "latest", asset_pattern = 'opam-*-{{ arch(x64="x86_64", arm64
 yazi = "latest"
 clang = "latest"
 lazydocker = "latest"
-btop = "latest"
 claude = "latest"
 
 [env]
