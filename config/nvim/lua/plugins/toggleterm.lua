@@ -24,6 +24,10 @@ return {
           position = "float",
         },
       },
+      picker = {
+        hidden = true,
+        ignored = true
+      }
     },
   },
 }

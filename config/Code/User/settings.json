@@ -10,6 +10,10 @@
         "comments": "off",
         "strings": "off"
     },
+    "Lua.workspace.ignoreDir": [
+        "*"
+    ],
+    "Lua.diagnostics.ignoredFiles": "Opened",
     "[toml]": {
         "editor.suggest.showKeywords": true,
         "editor.wordBasedSuggestions": "off",
@@ -23,7 +27,9 @@
         },
         "editor.tabSize": 2
     },
-    "Lua.diagnostics.globals": ["vim"],
+    "Lua.diagnostics.globals": [
+        "vim"
+    ],
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.defaultFormatter": "charliermarsh.ruff",

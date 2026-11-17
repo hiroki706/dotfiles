@@ -21,7 +21,7 @@ yazi = "latest"
 clang = "latest"
 lazydocker = "latest"
 claude = "latest"
-"npm:@deepseek-ai/dsh" = "latest"
+ruff = "latest"
 
 [env]
 EDITOR = "nvim"

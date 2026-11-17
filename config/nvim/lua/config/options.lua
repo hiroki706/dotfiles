@@ -13,4 +13,3 @@ vim.opt.number = true
 
 -- 保存時の自動フォーマットを無効化
 vim.g.autoformat = false
-
