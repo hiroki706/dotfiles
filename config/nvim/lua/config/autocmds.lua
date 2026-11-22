@@ -13,3 +13,12 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.conceallevel = 0
   end,
 })
+
+-- typstなどでスペルチェックを無効化
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "typst", "markdown", "text" },
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+})
+

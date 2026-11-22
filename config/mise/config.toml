@@ -22,6 +22,7 @@ clang = "latest"
 lazydocker = "latest"
 claude = "latest"
 ruff = "latest"
+go = "latest"
 
 [env]
 EDITOR = "nvim"

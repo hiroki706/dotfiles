@@ -12,6 +12,7 @@ abbr -a lg lazygit
 abbr -a oc opencode
 alias mr='mise r'
 alias fd='fdfind'
+alias ls='eza -h --group-directories-first --icons=auto'
 
 # opam設定
 test -r '/home/hirok/.opam/opam-init/init.fish' && source '/home/hirok/.opam/opam-init/init.fish' >/dev/null 2>/dev/null; or true

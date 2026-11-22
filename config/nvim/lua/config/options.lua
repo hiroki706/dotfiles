@@ -13,3 +13,9 @@ vim.opt.number = true
 
 -- 保存時の自動フォーマットを無効化
 vim.g.autoformat = false
+-- スペルチェック無効化
+vim.opt.spell = false
+
+-- 行頭/行末で ←→ を押すと前後の行へ移る
+vim.opt.whichwrap:append("<,>,[,]")
+

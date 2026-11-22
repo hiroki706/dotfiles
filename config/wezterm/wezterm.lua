@@ -10,7 +10,7 @@ config.initial_rows = 30
 
 local act = wezterm.action
 config.keys = {
-	-- 右側にペインを追加 Ctrl+Shift+D
+	-- 右側にペインを追加 Ctrl+Shift+P
 	{
 		key = "p",
 		mods = "CTRL|SHIFT",
@@ -18,5 +18,11 @@ config.keys = {
 	},
 	-- ペインフォーカス移動 Ctrl+Shift+矢印
 }
+
+-- 上タブ
+config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+config.tab_max_width = 32
+-- ウィンドウの閉じるボタン押下時に確認画面を出さない
+config.window_close_confirmation = 'NeverPrompt'
 
 return config

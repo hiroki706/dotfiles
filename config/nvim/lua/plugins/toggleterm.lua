@@ -25,6 +25,15 @@ return {
         },
       },
       picker = {
+        sources = {
+          explorer = {
+            layout = {
+              layout = {
+                width = 25,
+              },
+            },
+          },
+        },
         hidden = true,
         ignored = true
       }
